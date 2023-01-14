@@ -93,6 +93,11 @@ img {
   margin: 0 auto;
   padding: 0 15px;
 }
+
+.grid {
+  display: grid;
+}
+
 /**
  * button
  */
@@ -111,6 +116,7 @@ img {
 /*-----------------------------------*\
 #HEADER
 \*-----------------------------------*/
+
 .header {
   background-color: var(--body-color-alt);
   position: fixed;
@@ -186,7 +192,26 @@ img {
 /*-----------------------------------*\
 #HOME
 \*-----------------------------------*/
+.home {
+  background-color: var(--body-color-alt);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
 
+.home__container {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.home__title,
+.home__description {
+  margin-bottom: 24px;
+}
+
+.home__title {
+  
+}
 /*-----------------------------------*\
 #STATS
 \*-----------------------------------*/
