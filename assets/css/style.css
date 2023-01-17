@@ -272,6 +272,62 @@ img {
 #STATS
 \*-----------------------------------*/
 
+.stats {
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+
+.stats__container {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.stats__item {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  background-color: var(--body-color);
+  padding: 24px 16px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgb(62 28 131 / 10%);
+}
+
+.stats__icon {
+  background-color: hsla(14, 100%, 57%, 0.11);
+  border: 1px dashed;
+  color: hsl(14, 100%, 57%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  display: grid;
+  place-items: center;
+}
+
+.stats__item:nth-child(2) .stats__icon {
+  background-color: hsla(262, 55%, 62%, 0.12);
+  color: hsl(262, 55%, 62%);
+}
+
+.stats__item:nth-child(3) .stats__icon {
+  background-color: hsla(88, 61%, 47%, 0.12);
+  color: hsl(88, 61%, 47%);
+}
+
+.stats__title {
+  font-size: var(--h3-font-size);
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.stats__descrisption {
+  font-size: var(--small-font-size);
+  line-height: 1.6;
+}
+
+.stats__data {
+  width: calc(100% - 60px);
+}
+
 /*-----------------------------------*\
 #BREAKPOINTS
 \*-----------------------------------*/
@@ -280,7 +336,19 @@ img {
  * for large devices
  */
 
+
+
 @media screen and (max-width: 1200px) {
+ :root {
+  --h1-font-size: 40px;
+  --h2-font-size: 30px;
+  --h3-font-size: 15px;
+  --normal-font-size: 14px;
+  --small-font-size: 13px;
+ }
+  .container {
+    max-width: 960px;
+  }
 }
 
 @media screen and (max-width: 968px) {
