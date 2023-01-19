@@ -198,9 +198,18 @@ img {
  * show overlay
  */
 
+ .show-overlay {
+  display: block;
+ }
+
 /**
  * scroll header
  */
+
+ .scroll-header {
+  background-color: var(--body-color);
+  box-shadow: 0  5px 30px rgb(0 22 84 / 10%);
+ }
 
 /*-----------------------------------*\
 #HOME
@@ -413,6 +422,12 @@ img {
     height: 100%;
     padding-top: 60px;
     z-index: 100;
+    transition: 0.3s;
+  }
+
+  .show-menu {
+    left: 0;
+
   }
 
   .nav__item {
